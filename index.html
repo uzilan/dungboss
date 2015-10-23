@@ -12,8 +12,8 @@
         <div ng-repeat="element in elements">
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" ng-model="elements[element].enabled"
-                           ng-change="selectHeroes()"> {{element}}
+                    <input type="checkbox" ng-model="elements[$index].enabled"
+                           ng-change="selectHeroes()"> {{element.name}}
                 </label>
             </div>
         </div>
@@ -28,8 +28,8 @@
         <div ng-repeat="class in classes">
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" ng-model="classes[class].enabled"
-                           ng-change="selectHeroes()"> {{class}}
+                    <input type="checkbox" ng-model="classes[$index].enabled"
+                           ng-change="selectHeroes()"> {{class.name}}
                 </label>
             </div>
         </div>

@@ -14,15 +14,21 @@ dungboss.controller('DungbossController', ['$scope', '$http',
             return _.chain($scope.heroes)
                 .map(type)
                 .uniq()
+                .map(function (name) {
+                    return {name: name, enabled: false};
+                })
                 .sort()
                 .value();
         };
 
         var isEnabled = function (hero) {
-            var e = $scope.elements[hero.element];
-            var c = $scope.classes[hero.class];
-            return e && e.enabled &&
-                c && c.enabled;
+            var elementIndex = findIndex($scope.elements, hero.element);
+            var element = $scope.elements[elementIndex];
+
+            var classIndex = findIndex($scope.classes, hero.class);
+            var clazz = $scope.classes[classIndex];
+
+            return element.enabled && clazz.enabled;
         };
 
         $scope.selectHeroes = function () {
@@ -34,14 +40,21 @@ dungboss.controller('DungbossController', ['$scope', '$http',
                 .value();
         };
 
+        var findIndex = function (items, value) {
+            return _.findIndex(items, function (v) {
+                return v.name === value;
+            });
+        };
+
         $scope.selectAll = function (type) {
 
             var sa;
             var items;
-            switch(type) {
+
+            switch (type) {
                 case 'classes':
-                   sa =  $scope.selectAllClasses;
-                   items = $scope.classes
+                    sa = $scope.selectAllClasses;
+                    items = $scope.classes;
                     break;
             }
 
@@ -52,7 +65,9 @@ dungboss.controller('DungbossController', ['$scope', '$http',
             }
 
             angular.forEach(items, function (item) {
-                $scope.classes[item].enabled = $scope.selectedAll;
+                var i = findIndex($scope.classes, item.name);
+                items[i].enabled = $scope.selectedAll;
             });
+            $scope.selectHeroes();
         }
     }]);
