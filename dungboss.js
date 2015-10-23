@@ -1,17 +1,22 @@
 var dungboss = angular.module('dungboss', []);
 
-dungboss.controller('DungbossController', ['$scope', 'HeroService',
-    function ($scope, HeroService) {
+dungboss.controller('DungbossController', ['$scope', '$http',
+    function ($scope, $http) {
 
-        $scope.heroes = HeroService.heroes;
+        $http.get('heroes.json').success(function (data) {
+            $scope.heroes = data;
+
+            $scope.elements = uniques("element");
+            $scope.classes = uniques("class");
+        });
 
         var uniques = function (type) {
-            return _.uniq(_.map(HeroService.heroes, function (hero) {
-                return hero[type];
-            }));
+            return _.chain($scope.heroes)
+                .map(type)
+                .uniq()
+                .sort()
+                .value();
         };
-
-        $scope.selectedHeroes = [];
 
         var isEnabled = function (hero) {
             var e = $scope.elements[hero.element];
@@ -21,16 +26,33 @@ dungboss.controller('DungbossController', ['$scope', 'HeroService',
         };
 
         $scope.selectHeroes = function () {
-            $scope.selectedHeroes = _.chain(HeroService.heroes)
+            $scope.selectedHeroes = _.chain($scope.heroes)
                 .filter(function (hero) {
                     return isEnabled(hero);
                 })
+                .sort()
                 .value();
         };
 
-        $scope.elements = uniques("element");
-        $scope.classes = uniques("class");
+        $scope.selectAll = function (type) {
 
+            var sa;
+            var items;
+            switch(type) {
+                case 'classes':
+                   sa =  $scope.selectAllClasses;
+                   items = $scope.classes
+                    break;
+            }
+
+            if (sa) {
+                $scope.selectedAll = true;
+            } else {
+                $scope.selectedAll = false;
+            }
+
+            angular.forEach(items, function (item) {
+                $scope.classes[item].enabled = $scope.selectedAll;
+            });
+        }
     }]);
-
-

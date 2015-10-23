@@ -9,7 +9,6 @@
 <div class="row">
     <div class="col-md-3">
         <h4>Elements</h4>
-
         <div ng-repeat="element in elements">
             <div class="checkbox">
                 <label>
@@ -21,7 +20,11 @@
     </div>
     <div class="col-md-3">
         <h4>Classes</h4>
-
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')"> All
+            </label>
+        </div>
         <div ng-repeat="class in classes">
             <div class="checkbox">
                 <label>
@@ -50,6 +53,5 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="dungboss.js"></script>
-<script src="heroes.js"></script>
 </body>
 </html>
