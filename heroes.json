@@ -2,46 +2,305 @@
   {
     "name": "Abigail the Brutal",
     "element": "Fire",
-    "class": "Warrior"
+    "class": "Warrior",
+    "img": "img/fire/Abigail_the_Brutal.jpg"
   },
   {
     "name": "Ignus the Mad",
     "element": "Fire",
-    "class": "Caster"
+    "class": "Caster",
+    "img": "img/fire/Ignus_the_Mad.jpg"
   },
   {
     "name": "Lady Nimriel",
     "element": "Fire",
-    "class": "Elf Rogue"
+    "class": "Elf Rogue",
+    "img": "img/fire/LadyNimriel.jpg"
   },
   {
     "name": "Lupina",
     "element": "Fire",
-    "class": "Beast Warrior"
+    "class": "Beast Warrior",
+    "img": "img/fire/Lupina.jpg"
   },
   {
     "name": "Mangle Jaw",
     "element": "Fire",
-    "class": "Beast Warrior"
+    "class": "Beast Warrior",
+    "img": "img/fire/Mangle_Jaw.jpg"
   },
   {
     "name": "Nitpick",
     "element": "Fire",
-    "class": "Magical Demon Caster"
+    "class": "Magical Demon Caster",
+    "img": "img/fire/Nitpick.jpg"
   },
   {
     "name": "Rogar Stonecrusher",
     "element": "Fire",
-    "class": "Armored Dwarf Warrior"
+    "class": "Armored Dwarf Warrior",
+    "img": "img/fire/Rogar_Stonecrusher.jpg"
   },
   {
     "name": "Squinch",
     "element": "Fire",
-    "class": "Goblin Warrior"
+    "class": "Goblin Warrior",
+    "img": "img/fire/Squinch.jpg"
   },
   {
     "name": "Torchy",
     "element": "Fire",
-    "class": "Fast Flying Beast"
+    "class": "Fast Flying Beast",
+    "img": "img/fire/Torchy.jpg"
+  },
+  {
+    "name": "Bovus El Doro",
+    "element": "Nature",
+    "class": "Armored Beast Warrior",
+    "img": "img/nature/Bovus_El_Doro.jpg"
+  },
+  {
+    "name": "Chief NubNub",
+    "element": "Nature",
+    "class": "Goblin Healer Slow",
+    "img": "img/nature/Chief_NubNub.jpg"
+  },
+  {
+    "name": "Cruel King Bramble",
+    "element": "Nature",
+    "class": "Armored Goblin Tank",
+    "img": "img/nature/Cruel_King_Bramble.jpg"
+  },
+  {
+    "name": "Jabber Clenchjaw",
+    "element": "Nature",
+    "class": "Beast Warrior",
+    "img": "img/nature/Jabber_Clenchjaw.jpg"
+  },
+  {
+    "name": "Julius",
+    "element": "Nature",
+    "class": "Beast Tank",
+    "img": "img/nature/Julius.jpg"
+  },
+  {
+    "name": "Phemus",
+    "element": "Nature",
+    "class": "Slow Magical Tank",
+    "img": "img/nature/Phemus.jpg"
+  },
+  {
+    "name": "Phenol Thoxian",
+    "element": "Nature",
+    "class": "Slow Magical Tank",
+    "img": "img/nature/PhenolThoxian.jpg"
+  },
+  {
+    "name": "Rocky the Shiitake",
+    "element": "Nature",
+    "class": "Mushroom Magical",
+    "img": "img/nature/Rocky_the_Shiitake.jpg"
+  },
+  {
+    "name": "Tsume",
+    "element": "Nature",
+    "class": "Magical Demon Warrior",
+    "img": "img/nature/Tsume.jpg"
+  },
+  {
+    "name": "Willow Swift",
+    "element": "Nature",
+    "class": "Fast Rogue",
+    "img": "img/nature/Willow_Swift.jpg"
+  },
+  {
+    "name": "Zurk",
+    "element": "Nature",
+    "class": "Goblin Warrior",
+    "img": "img/nature/Zurk.jpg"
+  },
+  {
+    "name": "IGOROK",
+    "element": "Water",
+    "class": "Magical Armored Tank",
+    "img": "img/water/IGOROK.jpg"
+  },
+  {
+    "name": "King Yorick",
+    "element": "Water",
+    "class": "Slow Undead Warrior",
+    "img": "img/water/King_Yorick.jpg"
+  },
+  {
+    "name": "Samurai Takumi",
+    "element": "Water",
+    "class": "Armored, Warrior",
+    "img": "img/water/Samurai_Takumi.jpg"
+  },
+  {
+    "name": "Selwyn the Enduring",
+    "element": "Water",
+    "class": "Caster",
+    "img": "img/water/Selwyn_the_Enduring.jpg"
+  },
+  {
+    "name": "Sir William",
+    "element": "Water",
+    "class": "Armored Tank",
+    "img": "img/water/Sir_William.jpg"
+  },
+  {
+    "name": "Stone Fist",
+    "element": "Water",
+    "class": "Magical Tank Slow",
+    "img": "img/water/Stone_Fist.jpg"
+  },
+  {
+    "name": "Therand Fiddlestrom",
+    "element": "Water",
+    "class": "Dwarf Caster",
+    "img": "img/water/Therand_Fiddlestrom.jpg"
+  },
+  {
+    "name": "Yasmin Bloom",
+    "element": "Water",
+    "class": "Healer",
+    "img": "img/water/Yasmin_Bloom.jpg"
+  },
+  {
+    "name": "Yokozuna",
+    "element": "Water",
+    "class": "Warrior Tank",
+    "img": "img/water/Yokozuna.jpg"
+  },
+  {
+    "name": "Balog the Barbarian",
+    "element": "Dark",
+    "class": "Slow Warrior Tank",
+    "img": "img/dark/BalogtheBarbarian.jpg"
+  },
+  {
+    "name": "Dagrund Blacksmoke",
+    "element": "Dark",
+    "class": "Dwarf Healer",
+    "img": "img/dark/Dagrund_Blacksmoke.jpg"
+  },
+  {
+    "name": "Ella Ametryst",
+    "element": "Dark",
+    "class": "Magical Demon Rogue",
+    "img": "img/dark/Ella_Ametryst.jpg"
+  },
+  {
+    "name": "Kobal the Pestilent",
+    "element": "Dark",
+    "class": "Caster",
+    "img": "img/dark/Kobal_the_Pestilent.jpg"
+  },
+  {
+    "name": "Life Reaper Brom",
+    "element": "Dark",
+    "class": "Slow Undead Warrior",
+    "img": "img/dark/Life_Reaper_Brom.jpg"
+  },
+  {
+    "name": "Lord Zomm",
+    "element": "Dark",
+    "class": "Undead Magical Slow",
+    "img": "img/dark/Lord_Zomm1.jpg"
+  },
+  {
+    "name": "Overlord Executum",
+    "element": "Dark",
+    "class": "Undead Warrior Tank Armored",
+    "img": "img/dark/Overlord_Executum.jpg"
+  },
+  {
+    "name": "Pontifex Mortis",
+    "element": "Dark",
+    "class": "Caster",
+    "img": "img/dark/Pontifex_Mortis.jpg"
+  },
+  {
+    "name": "Shadowblade",
+    "element": "Dark",
+    "class": "Fast Rogue",
+    "img": "img/dark/Shadowblade.jpg"
+  },
+  {
+    "name": "Alexandros",
+    "element": "Light",
+    "class": "Magical Armored Tank",
+    "img": "img/light/Alexandros.jpg"
+  },
+  {
+    "name": "Archangel Emily",
+    "element": "Light",
+    "class": "Magical Armored Healer",
+    "img": "img/light/Archangel_Emily.jpg"
+  },
+  {
+    "name": "Black Diamond",
+    "element": "Light",
+    "class": "Fast Rogue",
+    "img": "img/light/Black_Diamond.jpg"
+  },
+  {
+    "name": "Ekko",
+    "element": "Light",
+    "class": "Magical Undead Spirit",
+    "img": "img/light/Ekko.jpg"
+  },
+  {
+    "name": "Dhaegon Stonecrusher",
+    "element": "Light",
+    "class": "Dwarf Warrior",
+    "img": "img/light/Dhaegon_Stonecrusher.jpg"
+  },
+  {
+    "name": "Masuta Kira",
+    "element": "Light",
+    "class": "Fast Rogue",
+    "img": "img/light/Masuta_Kira.jpg"
+  },
+  {
+    "name": "Sifu Jianzhi",
+    "element": "Light",
+    "class": "Ninja Warrior",
+    "img": "img/light/Sifu_Jianzhi.jpg"
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

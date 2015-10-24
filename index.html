@@ -3,51 +3,76 @@
 <head>
     <title>Dungeon Bossenator</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body ng-controller="DungbossController">
+<div class="container">
 
-<div class="row">
-    <div class="col-md-3">
-        <h4>Elements</h4>
-        <div ng-repeat="element in elements">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" ng-model="elements[$index].enabled"
-                           ng-change="selectHeroes()"> {{element.name}}
-                </label>
-            </div>
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <h2>Dungeon Boss Filter</h2>
+            <div class="help-text">Choose from the categories on the left to find matching heroes</div>
         </div>
     </div>
-    <div class="col-md-3">
-        <h4>Classes</h4>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')"> All
-            </label>
-        </div>
-        <div ng-repeat="class in classes">
+    <div class="row" style="padding-top: 10px">
+        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+
+            <h5>Element</h5>
+
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" ng-model="classes[$index].enabled"
-                           ng-change="selectHeroes()"> {{class.name}}
+                    <input type="checkbox" ng-model="selectAllElements" ng-click="selectAll('elements')">
+                    All
                 </label>
             </div>
+            <div ng-repeat="element in elements">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="elements[$index].enabled"
+                               ng-change="selectHeroes()"> {{element.name}}
+                    </label>
+                </div>
+            </div>
+
+            <h5>Class</h5>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')">
+                    All
+                </label>
+            </div>
+            <div ng-repeat="class in classes">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="classes[$index].enabled"
+                               ng-change="selectHeroes()"> {{class.name}}
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10">
+            <ul class="row">
+
+                <div ng-repeat="hero in selectedHeroes">
+                    <li class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+                        <div class="hero">
+                            <img ng-src="{{hero.img}}" class="hero-img"/><br/>
+
+                            <div class="hero-text">
+                                <span class="hero-title">{{hero.name}}</span>
+
+                                <div>{{hero.element}} {{hero.class}}</div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
         </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="col-md-12">
-
-
-        <h2>Selected</h2>
-
-        <div ng-repeat="t in selectedHeroes">
-            {{t.name}}
-        </div>
-    </div>
-</div>
-
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/lodash/lodash.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>

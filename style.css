@@ -1,0 +1,39 @@
+html, body {
+    width: 100%;
+    font-family: Helvetica;
+}
+
+.hero {
+    border: 2px groove blueviolet;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+    height: 210px;
+}
+
+.hero-text {
+
+    padding-right: 5px;
+    font-size: 9pt;
+}
+.hero-title {
+    font-weight: bold;
+}
+
+.hero-img {
+
+}
+
+.help-text {
+    font-style: italic;;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h5 {
+    padding-top: 10px;
+    font-weight: bolder;
+}
