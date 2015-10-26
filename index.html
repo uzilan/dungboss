@@ -20,14 +20,14 @@
 
             <h5>Element</h5>
 
-            <div class="checkbox" style="padding-left: 2px;">
+            <div class="checkbox checkbox-text" style="padding-left: 2px;">
                 <label>
                     <input type="checkbox" ng-model="selectAllElements" ng-click="selectAll('elements')">
                     All
                 </label>
             </div>
             <div ng-repeat="element in elements">
-                <div class="checkbox checkbox-background {{element.name}}-background">
+                <div class="checkbox checkbox-text checkbox-background {{element.name}}-background">
                     <label>
                         <input type="checkbox" ng-model="elements[$index].enabled"
                                ng-change="selectHeroes()"> {{element.name}}
@@ -37,14 +37,14 @@
 
             <h5>Class</h5>
 
-            <div class="checkbox">
+            <div class="checkbox checkbox-text">
                 <label>
                     <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')">
                     All
                 </label>
             </div>
             <div ng-repeat="class in classes">
-                <div class="checkbox">
+                <div class="checkbox checkbox-text">
                     <label>
                         <input type="checkbox" ng-model="classes[$index].enabled"
                                ng-change="selectHeroes()"> {{class.name}}
@@ -58,7 +58,7 @@
             <ul class="row">
 
                 <div ng-repeat="hero in selectedHeroes">
-                    <li class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+                    <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
                         <a href="{{hero.url}}" target="_blank">
                             <div class="hero {{hero.element}}-border">
                                 <img ng-src="{{hero.img}}" class="hero-img"/><br/>

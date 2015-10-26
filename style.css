@@ -34,7 +34,11 @@ html, body {
 .checkbox-background {
     color: white;
     padding-left: 2px;
-    width: 70px;
+    width: 100px;
+}
+
+.checkbox-text {
+    font-size: 16pt;
 }
 
 .Fire-background {
