@@ -11,6 +11,7 @@
     <div class="row">
         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
             <h2>Dungeon Boss Filter</h2>
+
             <div class="help-text">Choose from the categories on the left to find matching heroes</div>
         </div>
     </div>
@@ -19,14 +20,14 @@
 
             <h5>Element</h5>
 
-            <div class="checkbox">
+            <div class="checkbox" style="padding-left: 2px;">
                 <label>
                     <input type="checkbox" ng-model="selectAllElements" ng-click="selectAll('elements')">
                     All
                 </label>
             </div>
             <div ng-repeat="element in elements">
-                <div class="checkbox">
+                <div class="checkbox {{element.name}}-background">
                     <label>
                         <input type="checkbox" ng-model="elements[$index].enabled"
                                ng-change="selectHeroes()"> {{element.name}}
@@ -58,15 +59,17 @@
 
                 <div ng-repeat="hero in selectedHeroes">
                     <li class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
-                        <div class="hero">
-                            <img ng-src="{{hero.img}}" class="hero-img"/><br/>
+                        <a href="{{hero.url}}" target="_blank">
+                            <div class="hero {{hero.element}}-border">
+                                <img ng-src="{{hero.img}}" class="hero-img"/><br/>
 
-                            <div class="hero-text">
-                                <span class="hero-title">{{hero.name}}</span>
+                                <div class="hero-text">
+                                    <span class="hero-title">{{hero.name}}</span>
 
-                                <div>{{hero.element}} {{hero.class}}</div>
+                                    <div>{{hero.element}} {{hero.class}}</div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </li>
                 </div>
             </ul>

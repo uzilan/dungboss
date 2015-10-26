@@ -4,12 +4,61 @@ html, body {
 }
 
 .hero {
-    border: 2px groove blueviolet;
     margin: 5px;
     padding: 5px;
     text-align: center;
     width: 120px;
     height: 210px;
+}
+
+.Fire-border {
+    border: 2px solid red;
+}
+
+.Nature-border {
+    border: 2px solid green;
+}
+
+.Water-border {
+    border: 2px solid blue;
+}
+
+.Dark-border {
+    border: 2px solid darkviolet;
+}
+
+.Light-border {
+    border: 2px solid burlywood;
+}
+
+.Fire-background {
+    background-color: red;
+    color: white;
+    padding-left: 2px;
+}
+
+.Nature-background {
+    background-color: green;
+    color: white;
+    padding-left: 2px;
+}
+
+.Water-background {
+    background-color: blue;
+    color: white;
+    padding-left: 2px;
+}
+
+.Dark-background {
+    background-color: darkviolet;
+    color: white;
+    padding-left: 2px;
+}
+
+.Light-background {
+    background-color: burlywood;
+    color: white;
+    padding-left: 2px;
 }
 
 .hero-text {
