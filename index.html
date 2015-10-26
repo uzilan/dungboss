@@ -23,14 +23,15 @@
             <div class="checkbox" style="padding-left: 2px;">
                 <label>
                     <input type="checkbox" ng-model="selectAllElements" ng-click="selectAll('elements')">
-                    All
+                    <span class="checkboxtext"> All</span>
                 </label>
             </div>
             <div ng-repeat="element in elements">
                 <div class="checkbox checkbox-background {{element.name}}-background">
                     <label>
                         <input type="checkbox" ng-model="elements[$index].enabled"
-                               ng-change="selectHeroes()"> {{element.name}}
+                               ng-change="selectHeroes()">
+                        <span class="checkboxtext"> {{element.name}}</span>
                     </label>
                 </div>
             </div>
@@ -40,14 +41,15 @@
             <div class="checkbox">
                 <label>
                     <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')">
-                    All
+                    <span class="checkboxtext"> All</span>
                 </label>
             </div>
             <div ng-repeat="class in classes">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" ng-model="classes[$index].enabled"
-                               ng-change="selectHeroes()"> {{class.name}}
+                               ng-change="selectHeroes()">
+                        <span class="checkboxtext"> {{class.name}}</span>
                     </label>
                 </div>
 
