@@ -1,12 +1,12 @@
 <!doctype html>
 <html ng-app="dungboss">
 <head>
-    <title>Dungeon Bossenator</title>
+    <title>Dungeon Boss Filter</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body ng-controller="DungbossController">
-<div class="container">
+<div class="container-fluid">
 
     <div class="row">
         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
@@ -23,15 +23,14 @@
             <div class="checkbox" style="padding-left: 2px;">
                 <label>
                     <input type="checkbox" ng-model="selectAllElements" ng-click="selectAll('elements')">
-                    <span class="checkboxtext"> All</span>
+                    All
                 </label>
             </div>
             <div ng-repeat="element in elements">
                 <div class="checkbox checkbox-background {{element.name}}-background">
                     <label>
                         <input type="checkbox" ng-model="elements[$index].enabled"
-                               ng-change="selectHeroes()">
-                        <span class="checkboxtext"> {{element.name}}</span>
+                               ng-change="selectHeroes()"> {{element.name}}
                     </label>
                 </div>
             </div>
@@ -41,15 +40,14 @@
             <div class="checkbox">
                 <label>
                     <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')">
-                    <span class="checkboxtext"> All</span>
+                    All
                 </label>
             </div>
             <div ng-repeat="class in classes">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" ng-model="classes[$index].enabled"
-                               ng-change="selectHeroes()">
-                        <span class="checkboxtext"> {{class.name}}</span>
+                               ng-change="selectHeroes()"> {{class.name}}
                     </label>
                 </div>
 
