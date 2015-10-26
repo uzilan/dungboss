@@ -27,7 +27,7 @@
                 </label>
             </div>
             <div ng-repeat="element in elements">
-                <div class="checkbox {{element.name}}-background">
+                <div class="checkbox checkbox-background {{element.name}}-background">
                     <label>
                         <input type="checkbox" ng-model="elements[$index].enabled"
                                ng-change="selectHeroes()"> {{element.name}}

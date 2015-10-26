@@ -31,34 +31,30 @@ html, body {
     border: 2px solid burlywood;
 }
 
-.Fire-background {
-    background-color: red;
+.checkbox-background {
     color: white;
     padding-left: 2px;
+    width: 70px;
+}
+
+.Fire-background {
+    background-color: red;
 }
 
 .Nature-background {
     background-color: green;
-    color: white;
-    padding-left: 2px;
 }
 
 .Water-background {
     background-color: blue;
-    color: white;
-    padding-left: 2px;
 }
 
 .Dark-background {
     background-color: darkviolet;
-    color: white;
-    padding-left: 2px;
 }
 
 .Light-background {
     background-color: burlywood;
-    color: white;
-    padding-left: 2px;
 }
 
 .hero-text {
