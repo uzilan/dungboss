@@ -1,4 +1,5 @@
-# dungboss
+# Dungeon Boss Filter
+
 A web page dedicated to help players find different sets of heroes in Dungeon Boss.
 
 The page is deployed in Heroku at https://dungeonbossfilter.herokuapp.com/
