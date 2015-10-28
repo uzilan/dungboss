@@ -64,6 +64,19 @@ dungboss.controller('DungbossController', ['$scope', '$http',
             return result;
         };
 
+        function toggleAll() {
+            var unselectedElementsFound = _.find($scope.elements, function (element) {
+                return !element.enabled
+            });
+
+            var unselectedClassesFound = _.find($scope.classes, function (clazz) {
+                return !clazz.enabled
+            });
+
+            $scope.selectAllElements = !unselectedElementsFound;
+            $scope.selectAllClasses = !unselectedClassesFound;
+        }
+
         $scope.selectHeroes = function () {
             $scope.selectedHeroes = _.chain($scope.heroes)
                 .filter(function (hero) {
@@ -73,6 +86,7 @@ dungboss.controller('DungbossController', ['$scope', '$http',
                     return hero.name;
                 })
                 .value();
+            toggleAll();
         };
 
         var findIndex = function (items, value) {
