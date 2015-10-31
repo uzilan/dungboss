@@ -41,8 +41,22 @@ dungboss.controller('DungbossController', ['$scope', '$http',
                 .value();
         };
 
-        var isEnabled = function (hero) {
-            var elementIndex = findIndex($scope.elements, hero.element);
+        var isHeroEnabled = function (hero) {
+
+            if (!isElementEnabled(hero.element)) {
+                return false;
+            }
+
+            var result = false;
+            _.each(_.words(hero.class), function (c) {
+                result |= isClassEnabled(c);
+            });
+
+            return result;
+        };
+
+        var isElementEnabled = function (e) {
+            var elementIndex = findIndex($scope.elements, e);
             if (elementIndex === -1) {
                 return false;
             }
@@ -50,21 +64,27 @@ dungboss.controller('DungbossController', ['$scope', '$http',
             if (!element.enabled) {
                 return false;
             }
-
-            var result = false;
-            _.each(_.words(hero.class), function (c) {
-                var classIndex = findIndex($scope.classes, c);
-                if (classIndex > -1) {
-                    var clazz = $scope.classes[classIndex];
-                    if (clazz.enabled) {
-                        result = true;
-                    }
-                }
-            });
-            return result;
+            return true;
         };
 
-        function toggleAll() {
+        var isClassEnabled = function (c) {
+            var classIndex = findIndex($scope.classes, c);
+            if (classIndex > -1) {
+                var clazz = $scope.classes[classIndex];
+                if (clazz.enabled) {
+                    return true;
+                }
+            }
+            return false;
+        };
+
+        var findIndex = function (items, value) {
+            return _.findIndex(items, function (v) {
+                return value.indexOf(v.name) > -1;
+            });
+        };
+
+        var toggleAll = function () {
             var unselectedElementsFound = _.find($scope.elements, function (element) {
                 return !element.enabled
             });
@@ -75,12 +95,12 @@ dungboss.controller('DungbossController', ['$scope', '$http',
 
             $scope.selectAllElements = !unselectedElementsFound;
             $scope.selectAllClasses = !unselectedClassesFound;
-        }
+        };
 
         $scope.selectHeroes = function () {
             $scope.selectedHeroes = _.chain($scope.heroes)
                 .filter(function (hero) {
-                    return isEnabled(hero);
+                    return isHeroEnabled(hero);
                 })
                 .sortBy(function (hero) {
                     return hero.name;
@@ -89,11 +109,6 @@ dungboss.controller('DungbossController', ['$scope', '$http',
             toggleAll();
         };
 
-        var findIndex = function (items, value) {
-            return _.findIndex(items, function (v) {
-                return value.indexOf(v.name) > -1;
-            });
-        };
 
         $scope.selectAll = function (type) {
 
