@@ -86,3 +86,12 @@ h5 {
     padding-top: 10px;
     font-weight: bolder;
 }
+
+.selection-mode {
+    white-space: nowrap;
+}
+
+.selection-mode-radio {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}

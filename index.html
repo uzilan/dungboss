@@ -37,6 +37,16 @@
 
             <h5>Class</h5>
 
+            <div class="selection-mode">Selection mode:</div>
+            <div class="radio selection-mode-radio">
+                <label class="radio-inline">
+                    <input type="radio" ng-model="selectionMode.mode" value="or" ng-change="selectHeroes()">or
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" ng-model="selectionMode.mode" value="and" ng-change="selectHeroes()">and
+                </label>
+            </div>
+
             <div class="checkbox checkbox-text">
                 <label>
                     <input type="checkbox" ng-model="selectAllClasses" ng-click="selectAll('classes')">

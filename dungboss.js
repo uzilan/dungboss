@@ -14,8 +14,11 @@ dungboss.controller('DungbossController', ['$scope', '$http',
 
             $scope.selectAllClasses = true;
             $scope.selectAll('classes');
-
         });
+
+        $scope.selectionMode = {
+            mode: 'or'
+        };
 
         var uniques = function (type) {
             return _.chain($scope.heroes)
@@ -47,9 +50,14 @@ dungboss.controller('DungbossController', ['$scope', '$http',
                 return false;
             }
 
-            var result = false;
+            var result = $scope.selectionMode.mode === 'and';
+
             _.each(_.words(hero.class), function (c) {
-                result |= isClassEnabled(c);
+                if ($scope.selectionMode.mode === 'or') {
+                    result |= isClassEnabled(c);
+                } else {
+                    result &= isClassEnabled(c);
+                }
             });
 
             return result;
@@ -61,10 +69,7 @@ dungboss.controller('DungbossController', ['$scope', '$http',
                 return false;
             }
             var element = $scope.elements[elementIndex];
-            if (!element.enabled) {
-                return false;
-            }
-            return true;
+            return element.enabled;
         };
 
         var isClassEnabled = function (c) {
