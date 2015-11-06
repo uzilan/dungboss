@@ -12,27 +12,6 @@ dungboss.factory('UtilService',
 
             /**
              * @ngdoc method
-             * @name uniques
-             * @methodOf UtilService
-             * @param {array} heroes the list of heroes to choose from
-             * @param {string} type the type of values to choose
-             * @returns {string} a list of unique values
-             * @description Find unique values of given type from a list of heroes
-             */
-            uniques: function (heroes, type) {
-                return _.chain(heroes)
-                    .map(type)
-                    .uniq()
-                    .sort()
-                    .map(function (name) {
-                        return {name: name, enabled: false};
-                    })
-                    .value();
-            },
-
-            // find the index of an item in a list of items
-            /**
-             * @ngdoc method
              * @name findIndex
              * @methodOf UtilService
              * @param {array} items the list of items to look in

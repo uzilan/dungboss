@@ -12,27 +12,6 @@ dungboss.factory('ClassService', ['UtilService',
 
             /**
              * @ngdoc method
-             * @name extractClasses
-             * @methodOf ClassService
-             * @param {json} heroes
-             * @returns {array} extracted list of classes
-             * @description Extract all classes from the heroes json
-             */
-            extractClasses: function (heroes) {
-                return _.chain(heroes)
-                    .reduce(function (result, h) {
-                        return result.concat(_.words(h.class));
-                    }, [])
-                    .uniq()
-                    .sort()
-                    .map(function (clazz) {
-                        return {name: clazz, enabled: false}
-                    })
-                    .value();
-            },
-
-            /**
-             * @ngdoc method
              * @name isClassEnabled
              * @methodOf ClassService
              * @param {array} classes the list of classes

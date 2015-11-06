@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "bower": "^1.6.5",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
   },
   "devDependencies": {},
   "scripts": {

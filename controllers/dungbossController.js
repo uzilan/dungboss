@@ -12,57 +12,6 @@ var dungboss = angular.module('dungboss', []);
 dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'ElementService', 'ClassService', 'UtilService',
     function ($scope, $http, HeroService, ElementService, ClassService, UtilService) {
 
-        // read all hero information from the json file and extract elements, classes and other information from it
-        $http.get('heroes.json').success(function (data) {
-            $scope.heroes = data;
-
-            $scope.elements = UtilService.uniques($scope.heroes, "element");
-            $scope.classes = ClassService.extractClasses($scope.heroes);
-
-            $scope.selectAllElements = true;
-            $scope.selectAll('elements');
-
-            $scope.selectAllClasses = true;
-            $scope.selectAll('classes');
-        });
-
-        $scope.selectionMode = {
-            mode: 'or'
-        };
-
-
-        // toggle the selection of all elements in a given list
-        var toggleAll = function () {
-            var unselectedElementsFound = _.find($scope.elements, function (element) {
-                return !element.enabled
-            });
-
-            var unselectedClassesFound = _.find($scope.classes, function (clazz) {
-                return !clazz.enabled
-            });
-
-            $scope.selectAllElements = !unselectedElementsFound;
-            $scope.selectAllClasses = !unselectedClassesFound;
-        };
-
-        /**
-         * @ngdoc method
-         * @name selectHeroes
-         * @methodOf DungbossController
-         * @description Select which heroes should be shown, based on the user's selections
-         */
-        $scope.selectHeroes = function () {
-            $scope.selectedHeroes = _.chain($scope.heroes)
-                .filter(function (hero) {
-                    return HeroService.isHeroEnabled($scope.elements, $scope.classes, hero, $scope.selectionMode);
-                })
-                .sortBy(function (hero) {
-                    return hero.name;
-                })
-                .value();
-            toggleAll();
-        };
-
         /**
          * @ngdoc method
          * @name selectAll
@@ -96,5 +45,57 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
                 items[i].enabled = $scope.selectedAll;
             });
             $scope.selectHeroes();
-        }
+        };
+
+        /**
+         * @ngdoc method
+         * @name selectHeroes
+         * @methodOf DungbossController
+         * @description Select which heroes should be shown, based on the user's selections
+         */
+        $scope.selectHeroes = function () {
+            $scope.selectedHeroes = _.chain($scope.heroes)
+                .filter(function (hero) {
+                    return HeroService.isHeroEnabled($scope.elements, $scope.classes, hero, $scope.selectionMode);
+                })
+                .sortBy(function (hero) {
+                    return hero.name;
+                })
+                .value();
+            toggleAll();
+        };
+
+        // toggle the selection of all elements in a given list
+        var toggleAll = function () {
+            var unselectedElementsFound = _.find($scope.elements, function (element) {
+                return !element.enabled
+            });
+
+            var unselectedClassesFound = _.find($scope.classes, function (clazz) {
+                return !clazz.enabled
+            });
+
+            $scope.selectAllElements = !unselectedElementsFound;
+            $scope.selectAllClasses = !unselectedClassesFound;
+        };
+
+        $http.get('/heroes').success(function (hs) {
+            $scope.heroes = hs;
+
+            $http.get('/elements').success(function (es) {
+                $scope.elements = es;
+                $scope.selectAllElements = true;
+                $scope.selectAll('elements');
+            });
+
+            $http.get('/classes').success(function (cs) {
+                $scope.classes = cs;
+                $scope.selectAllClasses = true;
+                $scope.selectAll('classes');
+            });
+        });
+
+        $scope.selectionMode = {
+            mode: 'or'
+        };
     }]);

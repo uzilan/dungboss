@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Abigail the Brutal",
+    "element": "Fire",
+    "class": "Warrior",
+    "img": "img/fire/Abigail_the_Brutal.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Abigail_the_Brutal",
+    "active": ["Swing", "Furious Charge", "Skull Cracker", "Rampage"],
+    "passive": ["Frenzy", "Rebel Yell"]
+  },
+  {
+    "name": "Ignus the Mad",
+    "element": "Fire",
+    "class": "Caster",
+    "img": "img/fire/Ignus_the_Mad.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Ignus_the_Mad",
+    "active": ["Wand", "Wall of Fire", "Energy Drain", "Volcanic Shards"],
+    "passive": ["Pyromaniac", "Fire Immune", "Fire Crusade"]
+  },
+  {
+    "name": "Lady Nimriel",
+    "element": "Fire",
+    "class": "Elf Rogue",
+    "img": "img/fire/LadyNimriel.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Lady_Nimriel",
+    "active": ["Shoot", "Get Over Here","Flaming Arrow", "Arrow Barrage"],
+    "passive": ["Magical", "Highly Resistant", "Tank Hunter"]
+  },
+  {
+    "name": "Lupina",
+    "element": "Fire",
+    "class": "Beast Warrior",
+    "img": "img/fire/Lupina.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Lupina"
+  },
+  {
+    "name": "Mangle Jaw",
+    "element": "Fire",
+    "class": "Beast Warrior",
+    "img": "img/fire/Mangle_Jaw.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Mangle_Jaw"
+  },
+  {
+    "name": "Nitpick",
+    "element": "Fire",
+    "class": "Magical Demon Caster",
+    "img": "img/fire/Nitpick.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Nitpick"
+  },
+  {
+    "name": "Rogar Stonecrusher",
+    "element": "Fire",
+    "class": "Armored Dwarf Warrior",
+    "img": "img/fire/Rogar_Stonecrusher.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Rogar_Stonecrusher"
+  },
+  {
+    "name": "Squinch",
+    "element": "Fire",
+    "class": "Goblin Warrior",
+    "img": "img/fire/Squinch.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Squinch"
+  },
+  {
+    "name": "Torchy",
+    "element": "Fire",
+    "class": "Fast Flying Beast",
+    "img": "img/fire/Torchy.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Torchy"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
