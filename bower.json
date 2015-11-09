@@ -19,6 +19,7 @@
   "dependencies": {
     "angular": "~1.4.7",
     "bootstrap": "~3.3.5",
-    "lodash": "~3.10.1"
+    "lodash": "~3.10.1",
+    "angular-tooltips": "~0.1.25"
   }
 }

@@ -2,7 +2,7 @@
  * @ngdoc overview
  * @description The dungboss module contain all the implementations for the Dungeon Boss Filter application
  */
-var dungboss = angular.module('dungboss', []);
+var dungboss = angular.module('dungboss', ['720kb.tooltips']);
 
 /**
  * @ngdoc controller
@@ -65,6 +65,18 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
             toggleAll();
         };
 
+        $scope.getTooltip = function (ability) {
+            var ab = _.find($scope.abilities, function (a) {
+                return a.name == ability;
+            });
+
+
+            return "<h1>" + ab.name + "</h1>" +
+                /*"<b>Type:</b>" +*/ "<h5>" + ab.type + "</h5>" +
+                //"<b>Cooldown:</b>" + "<span>" + ab.cooldown + "</span>" +
+                "<h5>" + ab.description + " </h5>";
+        };
+
         // toggle the selection of all elements in a given list
         var toggleAll = function () {
             var unselectedElementsFound = _.find($scope.elements, function (element) {
@@ -77,6 +89,10 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
 
             $scope.selectAllElements = !unselectedElementsFound;
             $scope.selectAllClasses = !unselectedClassesFound;
+        };
+
+        $scope.getAbilityImg = function (type, name) {
+            return "img/" + type + "/active/" + name.replace(" ", "_") + ".png";
         };
 
         $http.get('/heroes').success(function (hs) {
@@ -93,6 +109,10 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
                 $scope.selectAllClasses = true;
                 $scope.selectAll('classes');
             });
+        });
+
+        $http.get('/abilities').success(function (as) {
+            $scope.abilities = as;
         });
 
         $scope.selectionMode = {

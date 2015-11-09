@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Frenzy",
+    "type": "Trait",
+    "cooldown": "Passive",
+    "description": "Increase CRIT chance by 9%."
+  },
+  {
+    "name": "Furious Charge",
+    "type": "Special",
+    "cooldown": "8 turns",
+    "description": "Buff team ATK +[45 + 0.5/Lvl]% and Melee Physical attack an enemy for [98% base + 0.25%/level ATK] damage."
+  },
+  {
+    "name": "Rampage",
+    "type": "Special",
+    "cooldown": "5 turns",
+    "description": "Melee Physical attack on target and 1 other random target for [70% ATK] base damage."
+  },
+  {
+    "name": "Rebel Yell",
+    "type": "Trait",
+    "cooldown": "Passive",
+    "description": "Buffs ATK on any CRIT."
+  },
+  {
+    "name": "Skull Cracker",
+    "type": "Special",
+    "cooldown": "3 turns",
+    "description": "Melee Physical attack an enemy [2+ 1 at Lvl 20]x for [40% ATK] base damage."
+  },
+  {
+    "name": "Swing",
+    "type": "Basic Attack",
+    "cooldown": "None",
+    "description": "A basic Melee Physical attack doing [49.5% ATK] base damage."
+  }
+]

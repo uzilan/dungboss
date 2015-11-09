@@ -5,8 +5,16 @@
     "class": "Warrior",
     "img": "img/fire/Abigail_the_Brutal.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Abigail_the_Brutal",
-    "active": ["Swing", "Furious Charge", "Skull Cracker", "Rampage"],
-    "passive": ["Frenzy", "Rebel Yell"]
+    "active": [
+      "Swing",
+      "Furious Charge",
+      "Skull Cracker",
+      "Rampage"
+    ],
+    "passive": [
+      "Frenzy",
+      "Rebel Yell"
+    ]
   },
   {
     "name": "Ignus the Mad",
@@ -14,8 +22,17 @@
     "class": "Caster",
     "img": "img/fire/Ignus_the_Mad.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Ignus_the_Mad",
-    "active": ["Wand", "Wall of Fire", "Energy Drain", "Volcanic Shards"],
-    "passive": ["Pyromaniac", "Fire Immune", "Fire Crusade"]
+    "active": [
+      "Wand",
+      "Wall of Fire",
+      "Energy Drain",
+      "Volcanic Shards"
+    ],
+    "passive": [
+      "Pyromaniac",
+      "Fire Immune",
+      "Fire Crusade"
+    ]
   },
   {
     "name": "Lady Nimriel",
@@ -23,50 +40,126 @@
     "class": "Elf Rogue",
     "img": "img/fire/LadyNimriel.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Lady_Nimriel",
-    "active": ["Shoot", "Get Over Here","Flaming Arrow", "Arrow Barrage"],
-    "passive": ["Magical", "Highly Resistant", "Tank Hunter"]
+    "active": [
+      "Shoot",
+      "Get Over Here",
+      "Flaming Arrow",
+      "Arrow Barrage"
+    ],
+    "passive": [
+      "Magical",
+      "Highly Resistant",
+      "Tank Hunter"
+    ]
   },
   {
     "name": "Lupina",
     "element": "Fire",
     "class": "Beast Warrior",
     "img": "img/fire/Lupina.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Lupina"
+    "url": "http://dungeonboss.wikia.com/wiki/Lupina",
+    "active": [
+      "Bite",
+      "Chaos Howl",
+      "Fiery Fangs",
+      "Intensify Burn"
+    ],
+    "passive": [
+      "Agile",
+      "Pack Fury",
+      "Grill Master"
+    ]
   },
   {
     "name": "Mangle Jaw",
     "element": "Fire",
     "class": "Beast Warrior",
     "img": "img/fire/Mangle_Jaw.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Mangle_Jaw"
+    "url": "http://dungeonboss.wikia.com/wiki/Mangle_Jaw",
+    "active": [
+      "Bite",
+      "Hot Coals",
+      "Fiery Fangs",
+      "Terror Tooth"
+    ],
+    "passive": [
+      "Beast Leader",
+      "Agile",
+      "Grill Master"
+    ]
   },
   {
     "name": "Nitpick",
     "element": "Fire",
     "class": "Magical Demon Caster",
     "img": "img/fire/Nitpick.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Nitpick"
+    "url": "http://dungeonboss.wikia.com/wiki/Nitpick",
+    "active": [
+      "Claw",
+      "Meteor Storm",
+      "Savage Slash",
+      "Fireball"
+    ],
+    "passive": [
+      "Magical",
+      "Spirit of Fire",
+      "Grill Master"
+    ]
   },
   {
     "name": "Rogar Stonecrusher",
     "element": "Fire",
     "class": "Armored Dwarf Warrior",
     "img": "img/fire/Rogar_Stonecrusher.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Rogar_Stonecrusher"
+    "url": "http://dungeonboss.wikia.com/wiki/Rogar_Stonecrusher",
+    "active": [
+      "Swing",
+      "Whirlwind",
+      "Skull Cracker",
+      "Rage Strike"
+    ],
+    "passive": [
+      "Perfect Swing",
+      "Armored"
+    ]
   },
   {
     "name": "Squinch",
     "element": "Fire",
     "class": "Goblin Warrior",
     "img": "img/fire/Squinch.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Squinch"
+    "url": "http://dungeonboss.wikia.com/wiki/Squinch",
+    "active": [
+      "Swing",
+      "Playing with Fire",
+      "Burning Chop",
+      "Cheap Shot"
+    ],
+    "passive": [
+      "Challenge Accepted",
+      "Warrior Hunter",
+      "Armored"
+    ]
   },
   {
     "name": "Torchy",
     "element": "Fire",
     "class": "Fast Flying Beast",
     "img": "img/fire/Torchy.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Torchy"
+    "url": "http://dungeonboss.wikia.com/wiki/Torchy",
+    "active": [
+      "Bite",
+      "Bat Out of Hell",
+      "Lock Jaw",
+      "Fiery Fangs"
+    ],
+    "passive": [
+      "Fast",
+      "Shifty",
+      "Flying",
+      "Grill Master",
+      "Beast Leader"
+    ]
   }
 ]
 

@@ -2,8 +2,9 @@
 <html ng-app="dungboss">
 <head>
     <title>Dungeon Boss Filter</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="bower_components/angular-tooltips/dist/angular-tooltips.min.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body ng-controller="DungbossController">
 <div class="container-fluid">
@@ -69,27 +70,50 @@
 
                 <div ng-repeat="hero in selectedHeroes">
                     <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                        <a href="{{hero.url}}" target="_blank">
-                            <div class="hero {{hero.element}}-border">
+
+                        <div class="hero {{hero.element}}-border">
+                            <a href="{{hero.url}}" target="_blank">
                                 <img ng-src="{{hero.img}}" class="hero-img"/><br/>
 
                                 <div class="hero-text">
                                     <span class="hero-title">{{hero.name}}</span>
 
                                     <div>{{hero.element}} {{hero.class}}</div>
+
                                 </div>
+                            </a>
+
+                            <div>
+                                <span ng-repeat="active in hero.active">
+                                    <a href="#" tooltips tooltip-html="{{getTooltip(active)}}">
+                                        <img ng-src="img/abilities/active/{{active}}.png" alt="{{active}}"
+                                             class="ability"/>
+                                    </a>
+                                </span><br/>
+                                <span ng-repeat="passive in hero.passive">
+                                    <a href="#" tooltips tooltip-html="{{getTooltip(passive)}}">
+                                        <img ng-src="img/abilities/passive/{{passive}}.png" alt="{{passive}}"
+                                             class="ability"/>
+                                    </a>
+                                </span>
                             </div>
-                        </a>
+                        </div>
+
                     </li>
                 </div>
             </ul>
         </div>
     </div>
+
+    <a href="#" tooltips title="tooltip">Tooltip me</a>
+
+
 </div>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/lodash/lodash.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-tooltips/dist/angular-tooltips.min.js"></script>
 <script src="controllers/dungbossController.js"></script>
 <script src="services/utilService.js"></script>
 <script src="services/classService.js"></script>
