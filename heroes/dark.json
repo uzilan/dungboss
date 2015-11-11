@@ -4,63 +4,193 @@
     "element": "Dark",
     "class": "Slow Warrior Tank",
     "img": "img/dark/BalogtheBarbarian.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Balog_the_Barbarian"
+    "url": "http://dungeonboss.wikia.com/wiki/Balog_the_Barbarian",
+    "active": [
+      "Swing",
+      "Thunder Shout",
+      "Hearty Taunt",
+      "Bull Rush"
+    ],
+    "passive": [
+      "Armored",
+      "Frenzy",
+      "Slow"
+    ]
   },
   {
     "name": "Dagrund Blacksmoke",
     "element": "Dark",
     "class": "Dwarf Healer",
     "img": "img/dark/Dagrund_Blacksmoke.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Dagrund_Blacksmoke"
+    "url": "http://dungeonboss.wikia.com/wiki/Dagrund_Blacksmoke",
+    "active": [
+      "Swing",
+      "Energy Rune",
+      "Smack Down",
+      "Healing Hands"
+    ],
+    "passive": [
+      "Perfect Swing",
+      "Caster Spirit",
+      "Vampiric"
+    ]
   },
   {
     "name": "Ella Ametryst",
     "element": "Dark",
     "class": "Magical Demon Rogue",
     "img": "img/dark/Ella_Ametryst.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Ella_Ametryst"
+    "url": "http://dungeonboss.wikia.com/wiki/Ella_Ametryst",
+    "active": [
+      "Swing",
+      "Charm",
+      "Blood Ritual",
+      "Kiss of Death"
+    ],
+    "passive": [
+      "Weak Spot",
+      "Magical",
+      "Frenzy",
+      "Vampiric"
+    ]
   },
   {
     "name": "Kobal the Pestilent",
     "element": "Dark",
     "class": "Caster",
     "img": "img/dark/Kobal_the_Pestilent.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Kobal_the_Pestilent"
+    "url": "http://dungeonboss.wikia.com/wiki/Kobal_the_Pestilent",
+    "active": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "passive": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "name": "Life Reaper Brom",
     "element": "Dark",
     "class": "Slow Undead Warrior",
     "img": "img/dark/Life_Reaper_Brom.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Life_Reaper_Brom"
+    "url": "http://dungeonboss.wikia.com/wiki/Life_Reaper_Brom",
+    "active": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "passive": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "name": "Lord Zomm",
     "element": "Dark",
     "class": "Undead Magical Slow",
     "img": "img/dark/Lord_Zomm1.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Lord_Zomm"
+    "url": "http://dungeonboss.wikia.com/wiki/Lord_Zomm",
+    "active": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "passive": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "name": "Overlord Executum",
     "element": "Dark",
     "class": "Undead Warrior Tank Armored",
     "img": "img/dark/Overlord_Executum.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Overlord_Executum"
+    "url": "http://dungeonboss.wikia.com/wiki/Overlord_Executum",
+    "active": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "passive": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "name": "Pontifex Mortis",
     "element": "Dark",
     "class": "Caster",
     "img": "img/dark/Pontifex_Mortis.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Pontifex_Mortis"
+    "url": "http://dungeonboss.wikia.com/wiki/Pontifex_Mortis",
+    "active": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "passive": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "name": "Shadowblade",
     "element": "Dark",
     "class": "Fast Rogue",
     "img": "img/dark/Shadowblade.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Shadowblade"
+    "url": "http://dungeonboss.wikia.com/wiki/Shadowblade",
+    "active": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "passive": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   }
 ]
 

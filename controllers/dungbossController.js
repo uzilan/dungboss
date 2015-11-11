@@ -65,16 +65,16 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
             toggleAll();
         };
 
-        $scope.getTooltip = function (ability) {
-            var ab = _.find($scope.abilities, function (a) {
+        $scope.showAbility = function (hero, ability) {
+            if (hero === $scope.currentHero && $scope.ability && ability === $scope.ability.name) {
+                $scope.ability = null;
+                return;
+            }
+
+            $scope.currentHero = hero;
+            $scope.ability = _.find($scope.abilities, function (a) {
                 return a.name == ability;
             });
-
-
-            return "<h1>" + ab.name + "</h1>" +
-                /*"<b>Type:</b>" +*/ "<h5>" + ab.type + "</h5>" +
-                //"<b>Cooldown:</b>" + "<span>" + ab.cooldown + "</span>" +
-                "<h5>" + ab.description + " </h5>";
         };
 
         // toggle the selection of all elements in a given list

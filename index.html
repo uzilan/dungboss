@@ -15,6 +15,12 @@
 
             <div class="help-text">Choose from the categories on the left to find matching heroes</div>
         </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div class="disclaimer">This page relies heavily on the fantastic
+                <a href="http://dungeonboss.wikia.com/" target="_blank">Wikia page</a></div>
+        </div>
+
     </div>
     <div class="row" style="padding-top: 10px">
         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
@@ -85,17 +91,19 @@
 
                             <div>
                                 <span ng-repeat="active in hero.active">
-                                    <a href="#" tooltips tooltip-html="{{getTooltip(active)}}">
+                                    <a href="" ng-click="showAbility(hero, active)">
                                         <img ng-src="img/abilities/active/{{active}}.png" alt="{{active}}"
                                              class="ability"/>
                                     </a>
                                 </span><br/>
                                 <span ng-repeat="passive in hero.passive">
-                                    <a href="#" tooltips tooltip-html="{{getTooltip(passive)}}">
+                                    <a href="" ng-click="showAbility(hero, passive)">
                                         <img ng-src="img/abilities/passive/{{passive}}.png" alt="{{passive}}"
                                              class="ability"/>
                                     </a>
                                 </span>
+                            </div>
+                            <div ng-show="currentHero === hero && ability" db-ability>
                             </div>
                         </div>
 
@@ -104,11 +112,8 @@
             </ul>
         </div>
     </div>
-
-    <a href="#" tooltips title="tooltip">Tooltip me</a>
-
-
 </div>
+
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/lodash/lodash.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -119,5 +124,6 @@
 <script src="services/classService.js"></script>
 <script src="services/elementService.js"></script>
 <script src="services/heroService.js"></script>
+<script src="directives/dbAbility.js"></script>
 </body>
 </html>
