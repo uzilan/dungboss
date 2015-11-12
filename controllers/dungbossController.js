@@ -113,6 +113,14 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
 
         $http.get('/abilities').success(function (as) {
             $scope.abilities = as;
+
+            $http.get('/abilities/active').success(function (as) {
+                $scope.actives = as;
+            });
+
+            $http.get('/abilities/passive').success(function (as) {
+                $scope.passives = as;
+            });
         });
 
         $scope.selectionMode = {

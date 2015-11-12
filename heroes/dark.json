@@ -96,20 +96,16 @@
     "img": "img/dark/Lord_Zomm1.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Lord_Zomm",
     "active": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Swing",
+      "From the Grave",
+      "Septic Claw",
+      "Taste for Brains"
     ],
     "passive": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Welcomed Fever",
+      "Lethargy",
+      "Undead Heart",
+      "Slow"
     ]
   },
   {
@@ -119,20 +115,15 @@
     "img": "img/dark/Overlord_Executum.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Overlord_Executum",
     "active": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Swing",
+      "Void Blade",
+      "Taunt",
+      "Leech"
     ],
     "passive": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Light Hunter",
+      "Armored",
+      "Lifeless"
     ]
   },
   {
@@ -142,20 +133,19 @@
     "img": "img/dark/Pontifex_Mortis.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Pontifex_Mortis",
     "active": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Necro Bolt",
+      "Chaos Storm",
+      "Bone Armor",
+      "Doom Bolt",
+      "Wand",
+      "Lifesteal"
     ],
     "passive": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Undead Fervor",
+      "Soul Eater",
+      "Reincarnate",
+      "Lifeless",
+      "Slow"
     ]
   },
   {
@@ -165,20 +155,14 @@
     "img": "img/dark/Shadowblade.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Shadowblade",
     "active": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Slash",
+      "From the Shadows",
+      "Vampiric Shurikens",
+      "Sickly Slice"
     ],
     "passive": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Shifty",
+      "Plague Spreader"
     ]
   }
 ]

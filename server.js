@@ -13,6 +13,12 @@ var init = function () {
 
     var collectAbilities = function (jsonFile) {
         abilities = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
+        activeAbilities = _.filter(abilities, function(a) {
+            return a.cooldown !== "Passive";
+        });
+        passiveAbilities = _.filter(abilities, function(a) {
+            return a.cooldown === "Passive";
+        });
     };
 
     var uniques = function (hers, type) {
@@ -54,6 +60,8 @@ var heroes = [];
 var elements = [];
 var classes = [];
 var abilities = [];
+var activeAbilities = [];
+var passiveAbilities = [];
 
 init();
 
@@ -71,6 +79,14 @@ app.get('/classes', function (req, res) {
 
 app.get('/abilities', function (req, res) {
     res.json(abilities);
+});
+
+app.get('/abilities/active', function (req, res) {
+    res.json(activeAbilities);
+});
+
+app.get('/abilities/passive', function (req, res) {
+    res.json(passiveAbilities);
 });
 
 app.get('/', function (req, res) {
