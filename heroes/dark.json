@@ -61,20 +61,14 @@
     "img": "img/dark/Kobal_the_Pestilent.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Kobal_the_Pestilent",
     "active": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Wand",
+      "Pandemic Swarm",
+      "Arcane Bolts",
+      "Crowd Control"
     ],
     "passive": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Plague Spreader",
+      "Quick Starter"
     ]
   },
   {
@@ -84,20 +78,15 @@
     "img": "img/dark/Life_Reaper_Brom.jpg",
     "url": "http://dungeonboss.wikia.com/wiki/Life_Reaper_Brom",
     "active": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Swing",
+      "Doom Blade",
+      "Team Leech",
+      "Sickly Slice"
     ],
     "passive": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Magical",
+      "Lifeless",
+      "Slow"
     ]
   },
   {
