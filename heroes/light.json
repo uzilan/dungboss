@@ -4,49 +4,127 @@
     "element": "Light",
     "class": "Magical Armored Tank",
     "img": "img/light/Alexandros.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Alexandros"
+    "url": "http://dungeonboss.wikia.com/wiki/Alexandros",
+    "active": [
+      "Swing",
+      "Damage Reflection",
+      "Shield Bash",
+      "Taunt"
+    ],
+    "passive": [
+      "Armored",
+      "Magical",
+      "Shocking Grasp"
+    ]
   },
   {
     "name": "Archangel Emily",
     "element": "Light",
     "class": "Magical Armored Healer",
     "img": "img/light/Archangel_Emily.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Archangel_Emily"
+    "url": "http://dungeonboss.wikia.com/wiki/Archangel_Emily",
+    "active": [
+      "Swing",
+      "Resurrection",
+      "Cleanse",
+      "Purging Smash"
+    ],
+    "passive": [
+      "Impervious",
+      "Magical",
+      "Armored",
+      "Demon Hunter"
+    ]
   },
   {
     "name": "Black Diamond",
     "element": "Light",
     "class": "Fast Rogue",
     "img": "img/light/Black_Diamond.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Black_Diamond"
-  },
-  {
-    "name": "Ekko",
-    "element": "Light",
-    "class": "Magical Undead Spirit",
-    "img": "img/light/Ekko.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Ekko"
+    "url": "http://dungeonboss.wikia.com/wiki/Black_Diamond",
+    "active": [
+      "Swing",
+      "Blade Storm",
+      "Assassinate",
+      "Assassin's Wrath"
+    ],
+    "passive": [
+      "Weak Spot",
+      "Fast",
+      "Light Crusade",
+      "Agile"
+    ]
   },
   {
     "name": "Dhaegon Stonecrusher",
     "element": "Light",
     "class": "Dwarf Warrior",
     "img": "img/light/Dhaegon_Stonecrusher.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Dhaegon_Stonecrusher"
+    "url": "http://dungeonboss.wikia.com/wiki/Dhaegon_Stonecrusher",
+    "active": [
+      "Swing",
+      "Electrified Whirlwind",
+      "Skull Cracker",
+      "Intensify Shock"
+    ],
+    "passive": [
+      "Perfect Swing",
+      "Armored",
+      "Impervious"
+    ]
+  },
+  {
+    "name": "Ekko",
+    "element": "Light",
+    "class": "Magical Undead Spirit",
+    "img": "img/light/Ekko.jpg",
+    "url": "http://dungeonboss.wikia.com/wiki/Ekko",
+    "active": [
+      "Swing",
+      "Energize",
+      "Electrical Storm",
+      "Intensify Shock"
+    ],
+    "passive": [
+      "Lightning Immune",
+      "Spirit Immune",
+      "Magical"
+    ]
   },
   {
     "name": "Masuta Kira",
     "element": "Light",
     "class": "Fast Rogue",
     "img": "img/light/Masuta_Kira.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Masuta_Kira"
+    "url": "http://dungeonboss.wikia.com/wiki/Masuta_Kira",
+    "active": [
+      "Slash",
+      "Death Blossom",
+      "Vibrating Palm",
+      "Dim Mak"
+    ],
+    "passive": [
+      "Shifty",
+      "PWN Undead",
+      "Wushu"
+    ]
   },
   {
     "name": "Sifu Jianzhi",
     "element": "Light",
     "class": "Healer Warrior",
     "img": "img/light/Sifu_Jianzhi.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Sifu_Jianzhi"
+    "url": "http://dungeonboss.wikia.com/wiki/Sifu_Jianzhi",
+    "active": [
+      "Kick",
+      "Feet of Fury",
+      "Heal Ally",
+      "Rampage"
+    ],
+    "passive": [
+      "Shocking Grasp",
+      "Shifty"
+    ]
   }
 ]
 
