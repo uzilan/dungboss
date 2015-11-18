@@ -4,63 +4,162 @@
     "element": "Water",
     "class": "Magical Armored Tank",
     "img": "img/water/IGOROK.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/IGOROK"
+    "url": "http://dungeonboss.wikia.com/wiki/IGOROK",
+    "active": [
+      "Swing",
+      "Polar Pounding",
+      "Arctic Rush",
+      "Reflecting Shield"
+    ],
+    "passive": [
+      "Armored",
+      "Freeze Immune",
+      "Polar Master"
+    ]
   },
   {
     "name": "King Yorick",
     "element": "Water",
     "class": "Slow Undead Warrior",
     "img": "img/water/King_Yorick.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/King_Yorick"
+    "url": "http://dungeonboss.wikia.com/wiki/King_Yorick",
+    "active": [
+      "Swing",
+      "Marked for Death",
+      "Guarding Strike",
+      "Armor Break"
+    ],
+    "passive": [
+      "Lifeless",
+      "Magical"
+    ]
   },
   {
     "name": "Samurai Takumi",
     "element": "Water",
     "class": "Armored, Warrior",
     "img": "img/water/Samurai_Takumi.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Samurai_Takumi"
+    "url": "http://dungeonboss.wikia.com/wiki/Samurai_Takumi",
+    "active": [
+      "Slash",
+      "Frost Katana",
+      "Bitter Strike",
+      "Guarding Strike"
+    ],
+    "passive": [
+      "Armored",
+      "Perfect Swing",
+      "Chillin' Master"
+    ]
   },
   {
     "name": "Selwyn the Enduring",
     "element": "Water",
     "class": "Caster",
     "img": "img/water/Selwyn_the_Enduring.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Selwyn_the_Enduring"
+    "url": "http://dungeonboss.wikia.com/wiki/Selwyn_the_Enduring",
+    "active": [
+      "Wand",
+      "Northern Gale",
+      "Chilling Blast",
+      "Frosty Bolt"
+    ],
+    "passive": [
+      "Freeze Immune",
+      "Polar Master"
+    ]
   },
   {
     "name": "Sir William",
     "element": "Water",
     "class": "Armored Tank",
     "img": "img/water/Sir_William.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Sir_William"
+    "url": "http://dungeonboss.wikia.com/wiki/Sir_William",
+    "active": [
+      "Swing",
+      "Bring It On",
+      "Bulwark",
+      "Smack Down"
+    ],
+    "passive": [
+      "Armored",
+      "Beast Hunter",
+      "Fire Hunter",
+      "Water Guard"
+    ]
   },
   {
     "name": "Stone Fist",
     "element": "Water",
     "class": "Magical Tank Slow",
     "img": "img/water/Stone_Fist.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Stone_Fist"
+    "url": "http://dungeonboss.wikia.com/wiki/Stone_Fist",
+    "active": [
+      "Punch",
+      "Fist of Justice",
+      "Taunt",
+      "Smack Down"
+    ],
+    "passive": [
+      "Magical",
+      "Impervious",
+      "Slow"
+    ]
   },
   {
     "name": "Therand Fiddlestrom",
     "element": "Water",
     "class": "Dwarf Caster",
     "img": "img/water/Therand_Fiddlestrom.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Therand_Fiddlestrom"
+    "url": "http://dungeonboss.wikia.com/wiki/Therand_Fiddlestrom",
+    "active": [
+      "Throw",
+      "Thermal Detonator",
+      "Helmet Missiles",
+      "Cheers Mate"
+    ],
+    "passive": [
+      "Perfect Swing",
+      "Armor Hunter",
+      "Armor Piercer",
+      "Armored Resistance"
+    ]
   },
   {
     "name": "Yasmin Bloom",
     "element": "Water",
     "class": "Healer",
     "img": "img/water/Yasmin_Bloom.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Yasmin_Bloom"
+    "url": "http://dungeonboss.wikia.com/wiki/Yasmin_Bloom",
+    "active": [
+      "Wand",
+      "Team Mend",
+      "Cure Wounds",
+      "Aegis Shield"
+    ],
+    "passive": [
+      "PWN Undead",
+      "Water Heart",
+      "Magical"
+    ]
   },
   {
     "name": "Yokozuna",
     "element": "Water",
     "class": "Warrior Tank",
     "img": "img/water/Yokozuna.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Yokozuna"
+    "url": "http://dungeonboss.wikia.com/wiki/Yokozuna",
+    "active": [
+      "Belly Flop",
+      "Sumo Stomp",
+      "Taunt",
+      "Self Repair"
+    ],
+    "passive": [
+      "Rogue Hunter",
+      "Warrior Heart",
+      "Twinkle Toes"
+    ]
   }
 ]
 
