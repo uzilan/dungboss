@@ -4,77 +4,198 @@
     "element": "Nature",
     "class": "Armored Beast Warrior",
     "img": "img/nature/Bovus_El_Doro.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Bovus_El_Doro"
+    "url": "http://dungeonboss.wikia.com/wiki/Bovus_El_Doro",
+    "active": [
+      "Swing",
+      "Stampede",
+      "Purging Smash",
+      "Rampage"
+    ],
+    "passive": [
+      "Warrior Heart",
+      "Armored",
+      "Field Dressing"
+    ]
   },
   {
     "name": "Chief NubNub",
     "element": "Nature",
     "class": "Goblin Healer Slow",
     "img": "img/nature/Chief_NubNub.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Chief_NubNub"
+    "url": "http://dungeonboss.wikia.com/wiki/Chief_NubNub",
+    "active": [
+      "Wand",
+      "Voodoo Chant",
+      "Stout Team",
+      "Haste Ally"
+    ],
+    "passive": [
+      "Mend",
+      "Spirit Resistance",
+      "Tribal Heart"
+    ]
   },
   {
     "name": "Cruel King Bramble",
     "element": "Nature",
     "class": "Armored Goblin Tank",
     "img": "img/nature/Cruel_King_Bramble.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Cruel_King_Bramble"
+    "url": "http://dungeonboss.wikia.com/wiki/Cruel_King_Bramble",
+    "active": [
+      "Swing",
+      "Goblin Dance Party",
+      "Overlord's Blitz",
+      "Gimme Gimme"
+    ],
+    "passive": [
+      "Armored",
+      "Tribal Leader",
+      "Goblin Crusade"
+    ]
   },
   {
     "name": "Jabber Clenchjaw",
     "element": "Nature",
     "class": "Beast Warrior",
     "img": "img/nature/Jabber_Clenchjaw.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Jabber_Clenchjaw"
+    "url": "http://dungeonboss.wikia.com/wiki/Jabber_Clenchjaw",
+    "active": [
+      "Claw",
+      "Beast Mode",
+      "Enraged Swipe",
+      "Horror Scrape"
+    ],
+    "passive": [
+      "Frenzy",
+      "Dwarf Hunter",
+      "Venom Master"
+    ]
   },
   {
     "name": "Julius",
     "element": "Nature",
     "class": "Beast Tank",
     "img": "img/nature/Julius.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Julius"
+    "url": "http://dungeonboss.wikia.com/wiki/Julius",
+    "active": [
+      "Punch",
+      "Barrel Toss",
+      "Astounding Pounding",
+      "Monkey See"
+    ],
+    "passive": [
+      "Fully Rested",
+      "Challenge Accepted",
+      "Pack Rampage"
+    ]
   },
   {
     "name": "Phemus",
     "element": "Nature",
     "class": "Slow Magical Tank",
     "img": "img/nature/Phemus.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Phemus"
+    "url": "http://dungeonboss.wikia.com/wiki/Phemus",
+    "active": [
+      "Swing",
+      "Earthquake",
+      "Hearty Taunt",
+      "Wild Swing"
+    ],
+    "passive": [
+      "Turn a Blind Eye",
+      "Magical",
+      "Slow"
+    ]
   },
   {
     "name": "Phenol Thoxian",
     "element": "Nature",
     "class": "Slow Magical Tank",
     "img": "img/nature/PhenolThoxian.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Phenol_Thoxian"
+    "url": "http://dungeonboss.wikia.com/wiki/Phenol_Thoxian",
+    "active": [
+      "Swing",
+      "Jelly Shot",
+      "Jiggle",
+      "Toxic Spittle"
+    ],
+    "passive": [
+      "Magical",
+      "Slow",
+      "Poison Skin"
+    ]
   },
   {
     "name": "Rocky the Shiitake",
     "element": "Nature",
     "class": "Mushroom Magical",
     "img": "img/nature/Rocky_the_Shiitake.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Rocky_the_Shiitake"
+    "url": "http://dungeonboss.wikia.com/wiki/Rocky_the_Shiitake",
+    "active": [
+      "Swing",
+      "Spore Cloud",
+      "Mauling",
+      "Rampage"
+    ],
+    "passive": [
+      "Magical",
+      "Piercing Yelp",
+      "Nature's Fury"
+    ]
   },
   {
     "name": "Tsume",
     "element": "Nature",
     "class": "Magical Demon Warrior",
     "img": "img/nature/Tsume.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Tsume"
+    "url": "http://dungeonboss.wikia.com/wiki/Tsume",
+    "active": [
+      "Swing",
+      "Soul Shred",
+      "Double Chop",
+      "Spreading Panic"
+    ],
+    "passive": [
+      "Savage Fury",
+      "Spirit of Nature",
+      "Magical"
+    ]
   },
   {
     "name": "Willow Swift",
     "element": "Nature",
     "class": "Fast Rogue",
     "img": "img/nature/Willow_Swift.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Willow_Swift"
+    "url": "http://dungeonboss.wikia.com/wiki/Willow_Swift",
+    "active": [
+      "Shoot",
+      "Sniper Shot",
+      "Evasive Shot",
+      "Arrow Barrage"
+    ],
+    "passive": [
+      "Nature Heart",
+      "Fast",
+      "Agile"
+    ]
   },
   {
     "name": "Zurk",
     "element": "Nature",
     "class": "Goblin Warrior",
     "img": "img/nature/Zurk.jpg",
-    "url": "http://dungeonboss.wikia.com/wiki/Zurk"
+    "url": "http://dungeonboss.wikia.com/wiki/Zurk",
+    "active": [
+      "Swing",
+      "Dragon Punch",
+      "Rampage",
+      "Crush the Nerds"
+    ],
+    "passive": [
+      "Critical Exhaustion",
+      "Caster Hunter",
+      "Field Dressing"
+    ]
   }
 ]
 

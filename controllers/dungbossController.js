@@ -2,7 +2,7 @@
  * @ngdoc overview
  * @description The dungboss module contain all the implementations for the Dungeon Boss Filter application
  */
-var dungboss = angular.module('dungboss', []);
+var dungboss = angular.module('dungboss', ['720kb.tooltips']);
 
 /**
  * @ngdoc controller
@@ -65,6 +65,18 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
             toggleAll();
         };
 
+        $scope.showAbility = function (hero, ability) {
+            if (hero === $scope.currentHero && $scope.ability && ability === $scope.ability.name) {
+                $scope.ability = null;
+                return;
+            }
+
+            $scope.currentHero = hero;
+            $scope.ability = _.find($scope.abilities, function (a) {
+                return a.name == ability;
+            });
+        };
+
         // toggle the selection of all elements in a given list
         var toggleAll = function () {
             var unselectedElementsFound = _.find($scope.elements, function (element) {
@@ -77,6 +89,10 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
 
             $scope.selectAllElements = !unselectedElementsFound;
             $scope.selectAllClasses = !unselectedClassesFound;
+        };
+
+        $scope.getAbilityImg = function (type, name) {
+            return "img/" + type + "/active/" + name.replace(" ", "_") + ".png";
         };
 
         $http.get('/heroes').success(function (hs) {
@@ -92,6 +108,18 @@ dungboss.controller('DungbossController', ['$scope', '$http', 'HeroService', 'El
                 $scope.classes = cs;
                 $scope.selectAllClasses = true;
                 $scope.selectAll('classes');
+            });
+        });
+
+        $http.get('/abilities').success(function (as) {
+            $scope.abilities = as;
+
+            $http.get('/abilities/active').success(function (as) {
+                $scope.actives = as;
+            });
+
+            $http.get('/abilities/passive').success(function (as) {
+                $scope.passives = as;
             });
         });
 

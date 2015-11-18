@@ -7,8 +7,8 @@ html, body {
     margin: 5px;
     padding: 5px;
     text-align: center;
-    width: 120px;
-    height: 210px;
+    width: 170px;
+    height: 260px;
 }
 
 .Fire-border {
@@ -94,4 +94,20 @@ h5 {
 .selection-mode-radio {
     margin-top: 0px;
     margin-bottom: 20px;
+}
+
+.ability {
+    width: 20px;
+}
+
+.ability-text {
+    padding-top: 5px;
+    font-size: 6pt;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    padding: 5px;
+    width: 180px;
+    border: dashed darkblue 1px;
 }

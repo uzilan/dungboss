@@ -2,8 +2,9 @@
 <html ng-app="dungboss">
 <head>
     <title>Dungeon Boss Filter</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="bower_components/angular-tooltips/dist/angular-tooltips.min.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body ng-controller="DungbossController">
 <div class="container-fluid">
@@ -14,6 +15,12 @@
 
             <div class="help-text">Choose from the categories on the left to find matching heroes</div>
         </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div class="disclaimer">This page relies heavily on the fantastic
+                <a href="http://dungeonboss.wikia.com/" target="_blank">Wikia site</a></div>
+        </div>
+
     </div>
     <div class="row" style="padding-top: 10px">
         <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
@@ -69,32 +76,55 @@
 
                 <div ng-repeat="hero in selectedHeroes">
                     <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                        <a href="{{hero.url}}" target="_blank">
-                            <div class="hero {{hero.element}}-border">
+
+                        <div class="hero {{hero.element}}-border">
+                            <a href="{{hero.url}}" target="_blank">
                                 <img ng-src="{{hero.img}}" class="hero-img"/><br/>
 
                                 <div class="hero-text">
                                     <span class="hero-title">{{hero.name}}</span>
 
                                     <div>{{hero.element}} {{hero.class}}</div>
+
                                 </div>
+                            </a>
+
+                            <div>
+                                <span ng-repeat="active in hero.active">
+                                    <a href="" ng-click="showAbility(hero, active)">
+                                        <img ng-src="img/abilities/active/{{active}}.png" alt="{{active}}"
+                                             class="ability"/>
+                                    </a>
+                                </span><br/>
+                                <span ng-repeat="passive in hero.passive">
+                                    <a href="" ng-click="showAbility(hero, passive)">
+                                        <img ng-src="img/abilities/passive/{{passive}}.png" alt="{{passive}}"
+                                             class="ability"/>
+                                    </a>
+                                </span>
                             </div>
-                        </a>
+                            <div ng-show="currentHero === hero && ability" db-ability>
+                            </div>
+                        </div>
+
                     </li>
                 </div>
             </ul>
         </div>
     </div>
 </div>
+
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/lodash/lodash.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-tooltips/dist/angular-tooltips.min.js"></script>
 <script src="controllers/dungbossController.js"></script>
 <script src="services/utilService.js"></script>
 <script src="services/classService.js"></script>
 <script src="services/elementService.js"></script>
 <script src="services/heroService.js"></script>
+<script src="directives/dbAbility.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

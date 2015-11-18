@@ -11,6 +11,16 @@ var init = function () {
         heroes = heroes.concat(JSON.parse(fs.readFileSync(jsonFile, 'utf8')));
     };
 
+    var collectAbilities = function (jsonFile) {
+        abilities = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
+        activeAbilities = _.filter(abilities, function(a) {
+            return a.cooldown !== "Passive";
+        });
+        passiveAbilities = _.filter(abilities, function(a) {
+            return a.cooldown === "Passive";
+        });
+    };
+
     var uniques = function (hers, type) {
         return _.chain(hers)
             .map(type)
@@ -40,6 +50,7 @@ var init = function () {
     collectHeroes("heroes/light.json");
     collectHeroes("heroes/nature.json");
     collectHeroes("heroes/water.json");
+    collectAbilities("abilities/abilities.json");
 
     elements = uniques(heroes, "element");
     classes = extractClasses(heroes);
@@ -48,6 +59,9 @@ var init = function () {
 var heroes = [];
 var elements = [];
 var classes = [];
+var abilities = [];
+var activeAbilities = [];
+var passiveAbilities = [];
 
 init();
 
@@ -61,6 +75,18 @@ app.get('/elements', function (req, res) {
 
 app.get('/classes', function (req, res) {
     res.json(classes);
+});
+
+app.get('/abilities', function (req, res) {
+    res.json(abilities);
+});
+
+app.get('/abilities/active', function (req, res) {
+    res.json(activeAbilities);
+});
+
+app.get('/abilities/passive', function (req, res) {
+    res.json(passiveAbilities);
 });
 
 app.get('/', function (req, res) {
