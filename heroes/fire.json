@@ -160,6 +160,24 @@
       "Grill Master",
       "Beast Leader"
     ]
+  },
+  {
+    "name": "Pignius Maximus",
+    "element": "Fire",
+    "class": "Demon Beast Tank",
+    "img": "img/fire/Pignius_Maximus.png",
+    "url": "http://dungeonboss.wikia.com/wiki/Pignius_Maximus",
+    "active": [
+      "Swing",
+      "Sucker Punch",
+      "Bestial Roar",
+      "Burning Taunt"
+    ],
+    "passive": [
+      "Bonfire",
+      "Magical",
+      "Hog Wild"
+    ]
   }
 ]
 

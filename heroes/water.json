@@ -160,6 +160,24 @@
       "Warrior Heart",
       "Twinkle Toes"
     ]
+  },
+  {
+    "name": "Indigo",
+    "element": "Water",
+    "class": "Fast Rogue",
+    "img": "img/water/Indigo.png",
+    "url": "http://dungeonboss.wikia.com/wiki/Indigo",
+    "active": [
+      "Shoot",
+      "Rapid Fire",
+      "Chilling Barrage",
+      "Sloth Shot"
+    ],
+    "passive": [
+      "Critical Energy",
+      "Fast",
+      "A Real Stunner"
+    ]
   }
 ]
 

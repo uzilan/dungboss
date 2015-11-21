@@ -94,6 +94,7 @@ h5 {
 .selection-mode-radio {
     margin-top: 0px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .ability {
